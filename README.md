@@ -1,10 +1,20 @@
 # TWU SQL Practice
 
-## How to Run
+## SQL Commands 
 ```
-sqlite3 biblioteca.sqlite < q5.sql
+# Start SQL
+$ sqlite3 biblioteca.sqlite
+
+# Run Script
+$ sqlite3 biblioteca.sqlite < q5.sql
+
+# View Schema
+$ .schema
+
+# Quit
+$ .quit
 ```
-*Note: `.schema` to view schema
+
 
 ## Questions
 
@@ -16,18 +26,18 @@ Anand Beck
 
 ### 3. What books and movies aren't checked out?
 Movies not checked out:
-Thin Red Line
-Crouching Tiger, Hidden Dragon
-Lawrence of Arabia
-Office Space
+- Thin Red Line
+- Crouching Tiger, Hidden Dragon
+- Lawrence of Arabia
+- Office Space
 
 Books not checked out:
-Fellowship of the Ring
-1984
-Tom Sawyer
-Catcher in the Rye
-To Kill a Mockingbird
-Domain Driven Design
+- Fellowship of the Ring
+- 1984
+- Tom Sawyer
+- Catcher in the Rye
+- To Kill a Mockingbird
+- Domain Driven Design
 
 ### 4. Add the book 'The Pragmatic Programmer', and add yourself as a member. Check out 'The Pragmatic Programmer'. Use your query from question 1 to verify that you have checked it out. Also, provide the SQL used to update the database.
 
@@ -39,5 +49,5 @@ SELECT member.name FROM member, checkout_item, book WHERE book.title = 'The Prag
 ```
 
 ### 5. Who has checked out more than 1 item?
-Anand Beck
-Frank Smith
+- Anand Beck
+- Frank Smith
