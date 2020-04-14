@@ -1,0 +1,1 @@
+SELECT member_name FROM (SELECT member.name as member_name, count(checkout_item.member_id) as num_checkout FROM checkout_item INNER JOIN member on checkout_item.member_id = member.id GROUP BY member_id) WHERE num_checkout > 1;
